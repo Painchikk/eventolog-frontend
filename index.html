@@ -1038,6 +1038,51 @@
             checkAuth();
         });
 
+        // Общий функция для API запросов
+        async function apiRequest(url, options) {
+            try {
+                const response = await fetch(url, options);
+                if (response.ok) {
+                    return await response.json();
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+            } catch (error) {
+                console.error('API request failed:', error);
+                throw error;
+            }
+        }
+
+        // Обработчик входа
+        loginSubmit.addEventListener('click', async () => {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            if (!email || !password) {
+                alert('Заполните все поля');
+                return;
+            }
+
+            try {
+                const data = await apiRequest('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+
+                localStorage.setItem('currentUser', JSON.stringify(data.data.user));
+                localStorage.setItem('token', data.token);
+
+                showUserInfo(data.data.user);
+                loginModal.classList.remove('active');
+
+            } catch (error) {
+                alert('Ошибка сервера. Проверьте что бэкенд запущен на порту 5000');
+            }
+        });
+
         // Проверка авторизации
         async function checkAuth() {
             const token = localStorage.getItem('token');
