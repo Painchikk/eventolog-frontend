@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регламент ивентологов</title>
-    <script src="server.js"></script>
+    <script scr="server.js"></script>
     <style>
         * {
             margin: 0;
@@ -46,12 +46,12 @@
         }
 
         .logo h1 {
-            font-size: 1.4rem;
+            font - size: 1.4rem;
             font-weight: 500;
         }
 
         .logo p {
-            font-size: 0.85rem;
+            font - size: 0.85rem;
             opacity: 0.8;
             margin-top: 5px;
         }
@@ -68,12 +68,12 @@
         }
 
         .user-name {
-            font-weight: 500;
+            font - weight: 500;
             margin-bottom: 5px;
         }
 
         .user-role {
-            font-size: 0.8rem;
+            font - size: 0.8rem;
             opacity: 0.8;
             background: rgba(255, 255, 255, 0.1);
             padding: 2px 8px;
@@ -131,12 +131,12 @@
         }
 
         .nav-menu {
-            list-style: none;
+            list - style: none;
             margin-bottom: 20px;
         }
 
         .nav-menu li {
-            margin-bottom: 5px;
+            margin - bottom: 5px;
         }
 
         .nav-menu a {
@@ -195,7 +195,7 @@
         }
 
         .header h1 {
-            font-size: 2.2rem;
+            font - size: 2.2rem;
             margin-bottom: 10px;
             color: #2c3e50;
         }
@@ -237,7 +237,7 @@
         }
 
         .meta .date {
-            margin-right: 15px;
+            margin - right: 15px;
             margin-bottom: 5px;
         }
 
@@ -249,13 +249,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             border-left: 4px solid #4a5568;
             width: 100%;
-            /* Добавляем */
             max-width: none;
-            /* Убираем ограничение */
         }
 
         .section h2 {
-            font-size: 1.6rem;
+            font - size: 1.6rem;
             margin-bottom: 15px;
             color: #2c3e50;
             padding-bottom: 10px;
@@ -263,22 +261,22 @@
         }
 
         .section h3 {
-            font-size: 1.2rem;
+            font - size: 1.2rem;
             margin: 18px 0 8px;
             color: #4a5568;
         }
 
         .section p,
         .section ul {
-            margin-bottom: 15px;
+            margin - bottom: 15px;
         }
 
         .section ul {
-            padding-left: 20px;
+            padding - left: 20px;
         }
 
         .section ul li {
-            margin-bottom: 8px;
+            margin - bottom: 8px;
         }
 
         .highlight {
@@ -304,7 +302,7 @@
         }
 
         .footer {
-            text-align: center;
+            text - align: center;
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
@@ -313,7 +311,7 @@
         }
 
         .search-highlight {
-            background-color: #fff8e1;
+            background - color: #fff8e1;
             padding: 2px 0;
             border-radius: 2px;
         }
@@ -354,7 +352,7 @@
         }
 
         .modal-header h2 {
-            font-size: 1.4rem;
+            font - size: 1.4rem;
             color: #2c3e50;
         }
 
@@ -371,7 +369,7 @@
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin - bottom: 15px;
         }
 
         .form-group label {
@@ -400,7 +398,7 @@
         }
 
         .form-footer {
-            margin-top: 15px;
+            margin - top: 15px;
             text-align: center;
             font-size: 0.9rem;
         }
@@ -440,7 +438,7 @@
         }
 
         .profile-info h2 {
-            margin-bottom: 5px;
+            margin - bottom: 5px;
         }
 
         .profile-stats {
@@ -459,7 +457,7 @@
         }
 
         .stat-value {
-            font-size: 1.8rem;
+            font - size: 1.8rem;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 5px;
@@ -491,7 +489,7 @@
         }
 
         .action-card h3 {
-            margin-bottom: 10px;
+            margin - bottom: 10px;
             color: #2c3e50;
         }
 
@@ -506,23 +504,26 @@
             }
 
             .content {
-                margin-left: 220px;
+                margin - left: 220px;
             }
         }
 
         @media (max-width: 768px) {
             .container {
-                flex-direction: column;
+                flex - direction: column;
             }
 
             .sidebar {
                 width: 100%;
                 height: auto;
                 position: relative;
+                max-height: 70vh;
+                overflow-y: auto;
             }
 
             .content {
-                margin-left: 0;
+                margin - left: 0;
+                padding: 20px;
             }
 
             .search-results {
@@ -534,12 +535,22 @@
             }
 
             .header {
-                flex-direction: column;
+                flex - direction: column;
                 align-items: flex-start;
             }
 
             .header-actions {
-                margin-top: 15px;
+                margin - top: 15px;
+                width: 100%;
+                justify-content: flex-end;
+            }
+
+            .header h1 {
+                font - size: 1.8rem;
+            }
+
+            .section {
+                padding: 15px;
             }
         }
     </style>
@@ -617,15 +628,15 @@
             </div>
 
             <ul class="nav-menu">
-                <li><a href="#main" class="active">Основные положения</a></li>
-                <li><a href="#section1">Раздел I: Принципы ивентологов</a></li>
-                <li><a href="#section2">Раздел II: Бюрократия</a></li>
-                <li><a href="#section3">Раздел III: Требования к ивентам</a></li>
-                <li><a href="#section4">Раздел IV: Типы и особенности ивентов</a></li>
-                <li><a href="#section5">Раздел V: Одобрение ивентов</a></li>
-                <li><a href="#section6">Раздел VI: Трибуна и оценки</a></li>
-                <li><a href="#section7">Раздел VII: ЧС ивентов</a></li>
-                <li><a href="#profile" id="profileLink">Личный кабинет</a></li>
+                <li><a href="#main" class="active nav-link">Основные положения</a></li>
+                <li><a href="#section1" class="nav-link">Раздел I: Принципы ивентологов</a></li>
+                <li><a href="#section2" class="nav-link">Раздел II: Бюрократия</a></li>
+                <li><a href="#section3" class="nav-link">Раздел III: Требования к ивентам</a></li>
+                <li><a href="#section4" class="nav-link">Раздел IV: Типы и особенности ивентов</a></li>
+                <li><a href="#section5" class="nav-link">Раздел V: Одобрение ивентов</a></li>
+                <li><a href="#section6" class="nav-link">Раздел VI: Трибуна и оценки</a></li>
+                <li><a href="#section7" class="nav-link">Раздел VII: ЧС ивентов</a></li>
+                <li><a href="#profile" class="nav-link" id="profileLink">Личный кабинет</a></li>
             </ul>
 
             <div class="auth-buttons" id="authButtons">
@@ -656,20 +667,23 @@
                 <div id="main" class="section">
                     <h2>Основные положения документа</h2>
                     <ul>
-                        <li>Регламент обязателен к соблюдению.</li>
-                        <li>Данный регламент является основной отдела.</li>
-                        <li>Знание регламента обязательно.</li>
-                        <li>Разделы не подлежат спонтанным изменениям.</li>
-                        <li>Используются только I и II разделы, частично III.</li>
+                        <li>Регламент обязателен к соблюдению всеми сотрудниками.</li>
+                        <li>Настоящий регламент является основным документом, регулирующим деятельность отдела.</li>
+                        <li>Знание регламента является обязательным требованием для всех сотрудников.</li>
+                        <li>Внесение изменений в разделы регламента не допускается в спонтанном порядке. Все правки
+                            должны согласовываться в установленном порядке.</li>
+                        <li>В текущей работе используются только положения Раздела I и Раздела II, а также частично
+                            Раздела III.</li>
                     </ul>
 
                     <div class="highlight">
-                        <p>В данном документе рассматриваются вопросы проведения ивентов, шаблоны, рекомендации и сами
-                            регуляции, существующие на данный момент.</p>
-                        <p>Об изменениях документа состав оповещается заранее, правки вступают в силу со следующей
-                            календарной недели.</p>
-                        <p>Любые документы исходящие от Совета считаются частью регламента, возникающие противоречия
-                            решаются в пользу более высоких регуляций.</p>
+                        <p>Данный документ регулирует вопросы проведения мероприятий (ивентов), содержит рабочие
+                            шаблоны, рекомендации и нормативные положения, действующие на текущий момент.</p>
+                        <p>О предстоящих изменениях в регламенте сообщается заблаговременно. Утверждённые правки
+                            вступают в силу со следующей календарной недели после их опубликования.</p>
+                        <p>Любые официальные документы, исходящие от Совета, считаются частью настоящего регламента. В
+                            случае возникновения противоречий между документами, приоритет имеют положения более
+                            высокого регулятивного уровня.</p>
                     </div>
                 </div>
 
@@ -757,7 +771,7 @@
                     <h3>Подготовка документа с записью:</h3>
                     <p>Основное требование к документу на запись - наглядность и понятность. Избегайте передозировки
                         информации, ненужных аббревиатур, очень ярких/токсичных цветов.</p>
-                    <p>Дocument на запись также подлежит одобрению.</p>
+                    <p>Документ на запись также подлежит одобрению.</p>
 
                     <div class="highlight">
                         <p>Для понимания угрозы "бумажной перегрузки" обратитесь к истории сервера МГ, где решение
@@ -774,7 +788,7 @@
                     <h3>Отсутствие перестрелки:</h3>
                     <p>В тот самый момент, когда игроки схватятся за оружие и начнут стрелять, вы смело можете сказать -
                         "Ну
-                        вот и всё, ну вот и закончился RP процесс".</p>
+                        вот и всё, вот и закончился RP процесс".</p>
                     <p>Не любая стрельба = отсутствие RP, но любое отсутствие RP = стрельба.</p>
 
                     <h3>Качество и желание:</h3>
@@ -921,61 +935,55 @@
                     <p>Готовый документ со всеми цветами отправляется главе отдела за возможными уточнениями или с
                         необходимыми пояснениями.</p>
                 </div>
+            </div>
 
-                <div class="footer">
-                    <p>Регламент ивентологов | Версия от 27.05.2024</p>
-                    <p>Любые документы исходящие от Совета считаются частью регламента</p>
+            <!-- Личный кабинет -->
+            <div id="profile" class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-avatar" id="profileAvatar">ИИ</div>
+                    <div class="profile-info">
+                        <h2 id="profileName">Иван Иванов</h2>
+                        <div class="user-role" id="profileRole">Ивентолог</div>
+                    </div>
                 </div>
+
+                <div class="profile-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Проведенных ивентов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">8.4</div>
+                        <div class="stat-label">Средняя оценка</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Текущих проекта</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">24</div>
+                        <div class="stat-label">Дней в отделе</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Мои ивенты</h2>
+                    <p>Здесь будет отображаться история ваших ивентов, планируемые мероприятия и статистика.</p>
+                    <!-- В реальном приложении здесь будет динамический контент -->
+                </div>
+
+                <div class="section">
+                    <h2>Настройки</h2>
+                    <p>Управление настройками профиля, уведомлениями и предпочтениями.</p>
+                    <!-- В реальном приложении здесь будут настройки -->
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Регламент ивентологов | Версия от 27.05.2024</p>
+                <p>Любые документы исходящие от Совета считаются частью регламента</p>
             </div>
         </div>
-
-        <!-- Личный кабинет -->
-        <div id="profile" class="profile-section">
-            <div class="profile-header">
-                <div class="profile-avatar" id="profileAvatar">ИИ</div>
-                <div class="profile-info">
-                    <h2 id="profileName">Иван Иванов</h2>
-                    <div class="user-role" id="profileRole">Ивентолог</div>
-                </div>
-            </div>
-
-            <div class="profile-stats">
-                <div class="stat-card">
-                    <div class="stat-value">12</div>
-                    <div class="stat-label">Проведенных ивентов</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">8.4</div>
-                    <div class="stat-label">Средняя оценка</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">3</div>
-                    <div class="stat-label">Текущих проекта</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">24</div>
-                    <div class="stat-label">Дней в отделе</div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Мои ивенты</h2>
-                <p>Здесь будет отображаться история ваших ивентов, планируемые мероприятия и статистика.</p>
-                <!-- В реальном приложении здесь будет динамический контент -->
-            </div>
-
-            <div class="section">
-                <h2>Настройки</h2>
-                <p>Управление настройками профиля, уведомлениями и предпочтениями.</p>
-                <!-- В реальном приложении здесь будут настройки -->
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>Регламент ивентологов | Версия от 27.05.2024</p>
-            <p>Любые документы исходящие от Совета считаются частью регламента</p>
-        </div>
-    </div>
     </div>
 
     <script>
