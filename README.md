@@ -1,0 +1,2 @@
+# eventolog-frontend
+Проект бомба
