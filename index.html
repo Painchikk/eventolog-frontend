@@ -248,7 +248,9 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             border-left: 4px solid #4a5568;
             width: 100%;
+            /* Добавляем */
             max-width: none;
+            /* Убираем ограничение */
         }
 
         .section h2 {
@@ -516,13 +518,10 @@
                 width: 100%;
                 height: auto;
                 position: relative;
-                max-height: 70vh;
-                overflow-y: auto;
             }
 
             .content {
                 margin-left: 0;
-                padding: 20px;
             }
 
             .search-results {
@@ -540,16 +539,6 @@
 
             .header-actions {
                 margin-top: 15px;
-                width: 100%;
-                justify-content: flex-end;
-            }
-
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .section {
-                padding: 15px;
             }
         }
     </style>
@@ -627,15 +616,15 @@
             </div>
 
             <ul class="nav-menu">
-                <li><a href="#main" class="active nav-link">Основные положения</a></li>
-                <li><a href="#section1" class="nav-link">Раздел I: Принципы ивентологов</a></li>
-                <li><a href="#section2" class="nav-link">Раздел II: Бюрократия</a></li>
-                <li><a href="#section3" class="nav-link">Раздел III: Требования к ивентам</a></li>
-                <li><a href="#section4" class="nav-link">Раздел IV: Типы и особенности ивентов</a></li>
-                <li><a href="#section5" class="nav-link">Раздел V: Одобрение ивентов</a></li>
-                <li><a href="#section6" class="nav-link">Раздел VI: Трибуна и оценки</a></li>
-                <li><a href="#section7" class="nav-link">Раздел VII: ЧС ивентов</a></li>
-                <li><a href="#profile" class="nav-link" id="profileLink">Личный кабинет</a></li>
+                <li><a href="#main" class="active">Основные положения</a></li>
+                <li><a href="#section1">Раздел I: Принципы ивентологов</a></li>
+                <li><a href="#section2">Раздел II: Бюрократия</a></li>
+                <li><a href="#section3">Раздел III: Требования к ивентам</a></li>
+                <li><a href="#section4">Раздел IV: Типы и особенности ивентов</a></li>
+                <li><a href="#section5">Раздел V: Одобрение ивентов</a></li>
+                <li><a href="#section6">Раздел VI: Трибуна и оценки</a></li>
+                <li><a href="#section7">Раздел VII: ЧС ивентов</a></li>
+                <li><a href="#profile" id="profileLink">Личный кабинет</a></li>
             </ul>
 
             <div class="auth-buttons" id="authButtons">
@@ -666,23 +655,20 @@
                 <div id="main" class="section">
                     <h2>Основные положения документа</h2>
                     <ul>
-                        <li>Регламент обязателен к соблюдению всеми сотрудниками.</li>
-                        <li>Настоящий регламент является основным документом, регулирующим деятельность отдела.</li>
-                        <li>Знание регламента является обязательным требованием для всех сотрудников.</li>
-                        <li>Внесение изменений в разделы регламента не допускается в спонтанном порядке. Все правки
-                            должны согласовываться в установленном порядке.</li>
-                        <li>В текущей работе используются только положения Раздела I и Раздела II, а также частично
-                            Раздела III.</li>
+                        <li>Регламент обязателен к соблюдению.</li>
+                        <li>Данный регламент является основной отдела.</li>
+                        <li>Знание регламента обязательно.</li>
+                        <li>Разделы не подлежат спонтанным изменениям.</li>
+                        <li>Используются только I и II разделы, частично III.</li>
                     </ul>
 
                     <div class="highlight">
-                        <p>Данный документ регулирует вопросы проведения мероприятий (ивентов), содержит рабочие
-                            шаблоны, рекомендации и нормативные положения, действующие на текущий момент.</p>
-                        <p>О предстоящих изменениях в регламенте сообщается заблаговременно. Утверждённые правки
-                            вступают в силу со следующей календарной недели после их опубликования.</p>
-                        <p>Любые официальные документы, исходящие от Совета, считаются частью настоящего регламента. В
-                            случае возникновения противоречий между документами, приоритет имеют положения более
-                            высокого регулятивного уровня.</p>
+                        <p>В данном документе рассматриваются вопросы проведения ивентов, шаблоны, рекомендации и сами
+                            регуляции, существующие на данный момент.</p>
+                        <p>Об изменениях документа состав оповещается заранее, правки вступают в силу со следующей
+                            календарной недели.</p>
+                        <p>Любые документы исходящие от Совета считаются частью регламента, возникающие противоречия
+                            решаются в пользу более высоких регуляций.</p>
                     </div>
                 </div>
 
@@ -770,7 +756,7 @@
                     <h3>Подготовка документа с записью:</h3>
                     <p>Основное требование к документу на запись - наглядность и понятность. Избегайте передозировки
                         информации, ненужных аббревиатур, очень ярких/токсичных цветов.</p>
-                    <p>Документ на запись также подлежит одобрению.</p>
+                    <p>Дocument на запись также подлежит одобрению.</p>
 
                     <div class="highlight">
                         <p>Для понимания угрозы "бумажной перегрузки" обратитесь к истории сервера МГ, где решение
@@ -787,7 +773,7 @@
                     <h3>Отсутствие перестрелки:</h3>
                     <p>В тот самый момент, когда игроки схватятся за оружие и начнут стрелять, вы смело можете сказать -
                         "Ну
-                        вот и всё, вот и закончился RP процесс".</p>
+                        вот и всё, ну вот и закончился RP процесс".</p>
                     <p>Не любая стрельба = отсутствие RP, но любое отсутствие RP = стрельба.</p>
 
                     <h3>Качество и желание:</h3>
@@ -934,55 +920,61 @@
                     <p>Готовый документ со всеми цветами отправляется главе отдела за возможными уточнениями или с
                         необходимыми пояснениями.</p>
                 </div>
-            </div>
 
-            <!-- Личный кабинет -->
-            <div id="profile" class="profile-section">
-                <div class="profile-header">
-                    <div class="profile-avatar" id="profileAvatar">ИИ</div>
-                    <div class="profile-info">
-                        <h2 id="profileName">Иван Иванов</h2>
-                        <div class="user-role" id="profileRole">Ивентолог</div>
-                    </div>
+                <div class="footer">
+                    <p>Регламент ивентологов | Версия от 27.05.2024</p>
+                    <p>Любые документы исходящие от Совета считаются частью регламента</p>
                 </div>
-
-                <div class="profile-stats">
-                    <div class="stat-card">
-                        <div class="stat-value">12</div>
-                        <div class="stat-label">Проведенных ивентов</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">8.4</div>
-                        <div class="stat-label">Средняя оценка</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">3</div>
-                        <div class="stat-label">Текущих проекта</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">24</div>
-                        <div class="stat-label">Дней в отделе</div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <h2>Мои ивенты</h2>
-                    <p>Здесь будет отображаться история ваших ивентов, планируемые мероприятия и статистика.</p>
-                    <!-- В реальном приложении здесь будет динамический контент -->
-                </div>
-
-                <div class="section">
-                    <h2>Настройки</h2>
-                    <p>Управление настройками профиля, уведомлениями и предпочтениями.</p>
-                    <!-- В реальном приложении здесь будут настройки -->
-                </div>
-            </div>
-
-            <div class="footer">
-                <p>Регламент ивентологов | Версия от 27.05.2024</p>
-                <p>Любые документы исходящие от Совета считаются частью регламента</p>
             </div>
         </div>
+
+        <!-- Личный кабинет -->
+        <div id="profile" class="profile-section">
+            <div class="profile-header">
+                <div class="profile-avatar" id="profileAvatar">ИИ</div>
+                <div class="profile-info">
+                    <h2 id="profileName">Иван Иванов</h2>
+                    <div class="user-role" id="profileRole">Ивентолог</div>
+                </div>
+            </div>
+
+            <div class="profile-stats">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Проведенных ивентов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">8.4</div>
+                    <div class="stat-label">Средняя оценка</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Текущих проекта</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Дней в отделе</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Мои ивенты</h2>
+                <p>Здесь будет отображаться история ваших ивентов, планируемые мероприятия и статистика.</p>
+                <!-- В реальном приложении здесь будет динамический контент -->
+            </div>
+
+            <div class="section">
+                <h2>Настройки</h2>
+                <p>Управление настройками профиля, уведомлениями и предпочтениями.</p>
+                <!-- В реальном приложении здесь будут настройки -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Регламент ивентологов | Версия от 27.05.2024</p>
+            <p>Любые документы исходящие от Совета считаются частью регламента</p>
+        </div>
+    </div>
     </div>
 
     <script>
@@ -999,7 +991,7 @@
         ];
 
         // Это база
-        export const API_BASE_URL = 'eventolog-backend-production.up.railway.app/api';
+        const API_BASE_URL = 'eventolog-backend-production.up.railway.app';
 
         // Элементы const
         const searchInput = document.getElementById('searchInput');
@@ -1036,51 +1028,6 @@
         // Инициализация при загрузке
         document.addEventListener('DOMContentLoaded', () => {
             checkAuth();
-        });
-
-        // Общий функция для API запросов
-        async function apiRequest(url, options) {
-            try {
-                const response = await fetch(url, options);
-                if (response.ok) {
-                    return await response.json();
-                } else {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-            } catch (error) {
-                console.error('API request failed:', error);
-                throw error;
-            }
-        }
-
-        // Обработчик входа
-        loginSubmit.addEventListener('click', async () => {
-            const email = document.getElementById('loginEmail').value;
-            const password = document.getElementById('loginPassword').value;
-
-            if (!email || !password) {
-                alert('Заполните все поля');
-                return;
-            }
-
-            try {
-                const data = await apiRequest('http://localhost:5000/api/auth/login', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ email, password })
-                });
-
-                localStorage.setItem('currentUser', JSON.stringify(data.data.user));
-                localStorage.setItem('token', data.token);
-
-                showUserInfo(data.data.user);
-                loginModal.classList.remove('active');
-
-            } catch (error) {
-                alert('Ошибка сервера. Проверьте что бэкенд запущен на порту 5000');
-            }
         });
 
         // Проверка авторизации
